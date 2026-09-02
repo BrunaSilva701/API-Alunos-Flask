@@ -14,13 +14,13 @@
 1. Escreve ``python`` para iniciar a interação
 2. Escreve ``exit()`` para sair
 
-## EXEMPLO
-`````
+## EXEMPLO DE API FLASK
+````python
 from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-# Dados de exemplo simulando um banco de dados
+# Dados JSON simulando um banco de dados
 cursos = [
     {"id": 1, "nome": "Python para Iniciantes"},
     {"id": 2, "nome": "Desenvolvimento Web com Flask"}
@@ -30,6 +30,5 @@ cursos = [
 def obter_cursos():
     return jsonify(cursos)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+app.run()
 ````
