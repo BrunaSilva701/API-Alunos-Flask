@@ -32,3 +32,9 @@ def obter_cursos():
 
 app.run()
 ````
+## Exemplo status code
+- 200 OK
+- 211 Created
+- 400 Bad Request
+- 404 Not Found
+- 500 Internal Server Error
